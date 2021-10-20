@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- login -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <a href="#" class="logo">Logo</a>
+
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Bus</a></li>
+
+            </ul>
+
+
+          <div><button class="signin">Sign In</button></div>
+        
+        <section class="banner"></section>
+
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <div class="carousel_img1" style="width: 100%;"> </div>
+                <div class="text">Rishikesh</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <div class="carousel_img2" style="width: 100%;"></div>
+                <div class="text">Goa</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <div class="carousel_img3" style="width: 100%;"></div>
+                <div class="text">Kerala</div>
+            </div>
+
+
+            <div class="side-carousel">
+                <div class="pic-ctn">
+                    <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="pic">
+                    <img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="pic">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="pic">
+
+                </div>
+            </div>
+
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="selection">
+            <ul class="tab-wrap">
+                <li>
+                    <input type="radio" id="tab-1" name="tab" checked>
+                    <label id="flight" for="tab-1"> <i class="fas fa-plane-departure"></i> Flight</label>
+                    <div class="tab-content">
+                        <div>
+                            <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> From</h2>
+                            <input list="magicHouses" id="myHouse" name="myHouse" placeholder='New Delhi' />
+                            <datalist id="magicHouses">
+                                <option value="Bangalore ">
+                                <option value="Mumbai">
+                                <option value="Pune">
+                                <option value="Jaipur">
+                                <option value="Coimbatore">
+                                <option value="Gwalior">
+                                <option value="Bhopal">
+
+
+                            </datalist>
+                            </form>
+                        </div>
+                        <div>
+                            <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> To</h2>
+                            <input list="magicHouses" id="myHouse" name="myHouse" placeholder="Mumbai" />
+                            <datalist id="magicHouses">
+                                <option value="Bangalore ">
+                                <option value="Delhi">
+                                <option value="Pune">
+                                <option value="Jaipur">
+                                <option value="Coimbatore">
+                                <option value="Gwalior">
+                                <option value="Bhopal">
+
+
+                            </datalist>
+                            </form>
+                        </div>
+
+                        <div>
+                            <h2>Departure</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <div>
+                            <h2>Return</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <button class="search">Search</button>
+                    </div>
+
+                </li>
+                <li>
+                    <input type="radio" id="tab-2" name="tab">
+                    <label id="hotel" for="tab-2"> <i class="fas fa-hotel"></i> Hotel</label>
+                    <div class="tab-content">
+                        <div>
+                            <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i>Place</h2>
+                            <input list="magicHouses" id="myHouse" name="myHouse" placeholder='New Delhi' />
+                            <datalist id="magicHouses">
+                                <option value="Bangalore ">
+                                <option value="Mumbai">
+                                <option value="Pune">
+                                <option value="Jaipur">
+                                <option value="Coimbatore">
+                                <option value="Gwalior">
+                                <option value="Bhopal">
+
+
+                            </datalist>
+                            </form>
+                        </div>
+                        <div>
+                            <h2>Check-In</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <div>
+                            <h2>Check-Out</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <button class="search">Search</button>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" id="tab-3" name="tab">
+                    <label id="bus" for="tab-3"><i class="fas fa-bus"></i>Bus</label>
+                    <div class="tab-content">
+                        <div>
+                            <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> From</h2>
+                            <input list="magicHouses" id="myHouse" name="myHouse" placeholder='New Delhi' />
+                            <datalist id="magicHouses">
+                                <option value="Bangalore ">
+                                <option value="Mumbai">
+                                <option value="Pune">
+                                <option value="Jaipur">
+                                <option value="Coimbatore">
+                                <option value="Gwalior">
+                                <option value="Bhopal">
+
+
+                            </datalist>
+                            </form>
+                        </div>
+                        <div>
+                            <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> To</h2>
+                            <input list="magicHouses" id="myHouse" name="myHouse" placeholder="Mumbai" />
+                            <datalist id="magicHouses">
+                                <option value="Bangalore ">
+                                <option value="Delhi">
+                                <option value="Pune">
+                                <option value="Jaipur">
+                                <option value="Coimbatore">
+                                <option value="Gwalior">
+                                <option value="Bhopal">
+
+
+                            </datalist>
+                            </form>
+                        </div>
+
+                        <div>
+                            <h2>Departure</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <div>
+                            <h2>Return</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                        </div>
+                        <button class="search">Search</button>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </main>
+
+    <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+    <br>
+
+
+    <!-- <div id="wrapper">
+        <h2>Categories</h2>
+        <div id="carouselowl">
+            <div id="contentowl">
+                <img class="item"
+                    src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                    <img class="item"
+                    src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyYXZlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    class="item" />
+
+            </div>
+        </div>
+        <button id="previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+            </svg>
+        </button>
+        <button id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+            </svg>
+        </button>
+    </div> -->
+
+
+
+    <script type="text/javascript">
+        // carousel
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4500); // Change image every 2 seconds
+        }
+
+        // carousel
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        //    category
+        // const gap = 16;
+
+        // const carouselowl = document.getElementById("carouselowl"),
+        //     contentowl = document.getElementById("contentowl"),
+        //     next = document.getElementById("next"),
+        //     prev = document.getElementById("previous");
+
+        // next.addEventListener("click", e => {
+        //     carouselowl.scrollBy(width + gap, 0);
+        //     if (carouselowl.scrollWidth !== 0) {
+        //         prev.style.display = "flex";
+        //     }
+        //     if (contentowl.scrollWidth - width - gap <= carouselowl.scrollLeft + width) {
+        //         next.style.display = "none";
+        //     }
+        // });
+        // prev.addEventListener("click", e => {
+        //     carouselowl.scrollBy(-(width + gap), 0);
+        //     if (carouselowl.scrollLeft - width - gap <= 0) {
+        //         prev.style.display = "none";
+        //     }
+        //     if (!contentowl.scrollWidth - width - gap <= carouselowl.scrollLeft + width) {
+        //         next.style.display = "flex";
+        //     }
+        // });
+
+        // let width = carouselowl.offsetWidth;
+        // window.addEventListener("resize", e => (width = carouselowl.offsetWidth));
+
+
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
