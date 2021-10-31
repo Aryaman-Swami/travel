@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="hotel.css">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Services</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Travel 2</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotel.html" class="nav-link" style="color:#F8AA30">Services</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <li >
+
+                    <div class="modal-container">
+
+                        <input type="checkbox" id="modal-toggle">
+                        <label for="modal-toggle" class="modal-btn label">Sign Up</label>
+        
+                        <div class="modal-backdrop"></div>
+                        <div class="modal-content">
+        
+                            <label for="modal-toggle" class="modal-close">&times;</label>
+                            <div class="container">
+                                <div>
+                                    <h2>Sign up</h2>
+                                </div>
+                                <FORM class="form" id="form">
+                                    <div class="form-control">
+                                        <label for="">Username</label>
+        
+                                        <input type="text" id="username" placeholder="Enter your fullname" autocomplete="off">
+                                        <i class="fas fa-check-circle "></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error Msg</small>
+                                    </div>
+        
+                                    <div class="form-control">
+                                        <label for="">Email</label>
+        
+                                        <input type="email" id="email" placeholder="Enter your Email" autocomplete="off">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error Msg</small>
+                                    </div>
+        
+                                    <div class="form-control">
+                                        <label for="">Phone Number</label>
+        
+                                        <input type="number" id="phone" placeholder="Enter your Phone Number"
+                                            autocomplete="off">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error Msg</small>
+                                    </div>
+        
+                                    <div class="form-control">
+                                        <label for="">Password</label>
+        
+                                        <input type="password" id="password" placeholder="Enter your Password"
+                                            autocomplete="off">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error Msg</small>
+                                    </div>
+        
+                                    <div class="form-control">
+                                        <label for="">ConfirmPassword</label>
+        
+                                        <input type="password" id="cpassword" placeholder="Confirm your Password"
+                                            autocomplete="off">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error Msg</small>
+                                    </div>
+                                    <input type="submit" value="submit" class="btn">
+                                </FORM>
+                            </div>
+        
+        
+        
+                            <!-- <label for="modal-toggle" class="modal-content-btn">OK</label> -->
+                        </div>
+                    </div>
+                </li>
+            
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="header-text">
+
+
+                <h2 class="line-1 anim-typewriter">Make Your Tour Amazing With Us</h2>
+                <p> Home > Services</p>
+            </div>
+          
+
+            <div class="tab-content">
+
+                <div class="tab-item">
+                    <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> Destination</h2>
+                    <input list="magicHouses" id="myHouse" name="myHouse" placeholder="Mumbai" />
+                    <datalist id="magicHouses">
+                        <option value="Bangalore ">
+                        <option value="Delhi">
+                        <option value="Pune">
+                        <option value="Jaipur">
+                        <option value="Coimbatore">
+                        <option value="Gwalior">
+                        <option value="Bhopal">
+
+
+                    </datalist>
+                    </form>
+                </div>
+
+                <div class="tab-item">
+                    <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> Guest</h2>
+                    <input list="magicHouses" id="myHouse" name="myHouse" placeholder="2 Adult , 1 Child" />
+                    <datalist id="magicHouses">
+
+
+
+                    </datalist>
+                    </form>
+                </div>
+
+                <div class="tab-item">
+                    <h2>Check In</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                </div>
+                <div class="tab-item">
+                    <h2>Check Out</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                </div>
+                <div class="tab-item">
+                    <button class="search">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+
+
+    <section class="aboutup">
+        <div class="gallery">
+            <div class="clipped-border">
+                <img src="https://media.istockphoto.com/photos/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-picture-id942152278?b=1&k=20&m=942152278&s=170667a&w=0&h=t1_kH6Ls4XAnAuBoSf0ba_n8WeY2-0rk8G4bg1_-a4Q="
+                    id="clipped">
+            </div>
+            <div class="clipped-border">
+                <img src="https://media.istockphoto.com/photos/varanasi-at-sunrise-picture-id905049262?b=1&k=20&m=905049262&s=170667a&w=0&h=XEQKKUNrpKAGKv-6wJBAIDq1lO7uFT1N3SsESmw4yYE="
+                    id="clipped">
+            </div>
+            <div class="clipped-border">
+                <img src="https://media.istockphoto.com/photos/india-gate-picture-id510795912?b=1&k=20&m=510795912&s=170667a&w=0&h=XLp6vDILq-QQ3-q3yh6YrGY-jxvWVfBXvs50izSNMzU="
+                    id="clipped">
+            </div>
+            <div class="clipped-border">
+                <img src="https://media.istockphoto.com/photos/camel-safari-ride-caravan-in-hunder-desert-nubra-valley-leh-ladakh-picture-id1061972196?b=1&k=20&m=1061972196&s=170667a&w=0&h=mrQQeAUeQxF778EI1QRPD4dcVY8lZtpu4eIkK01Pcpg="
+                    id="clipped">
+            </div>
+            <div class="clipped-border">
+                <img src="https://images.unsplash.com/photo-1519114056088-b877fe073a5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80"
+                    id="clipped">
+            </div>
+            <div class="shadow"></div>
+        </div>
+
+
+        <div class="about-right">
+            <h2>Make Your Tour Memorable and Safe With Us</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+
+
+            <div class="search">Search</div>
+        </div>
+
+
+    </section>
+
+    <div class="stats">
+        <div class="stat-content">
+            <div class="stat-item"><i class="fas fa-bed"></i>
+                <h3> Hotel Reservation</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+            </div>
+            <div class="stat-item"><i class="fas fa-utensils"></i>
+                <h3>Fine Dinin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="stat-item"><i class="fas fa-key"></i>
+                <h3>Private Hotel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="stat-item"><i class="fas fa-heart"></i>
+                <h3> Honeymoon Package </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about">
+
+
+        <img src="sky.png" class="sky">
+
+
+        <h1>Destination </h1>
+        <h1 class="dest-text">Unlimited With Travel</h1>
+    </div>
+
+    <div class="stats2">
+        <div class="stat-content2">
+            <div class="stat-item"><i class="fas fa-plane-departure"></i></i>
+                <h3> 9000+</h3>
+                <p>Travel Packages</p>
+            </div>
+            <div class="stat-item"><img src="thread.png"></div>
+            <div class="stat-item"><i class="fas fa-globe-americas"></i></i>
+                <h3>280</h3>
+                <p>Branches All Over</p>
+            </div>
+            <div class="stat-item"><img src="thread.png"></div>
+            <div class="stat-item"><i class="fas fa-binoculars"></i>
+                <h3>900+</h3>
+                <p>Expert Agents</p>
+            </div>
+            <div class="stat-item"><img src="thread.png"></div>
+            <div class="stat-item"><i class="fas fa-skiing-nordic"></i>
+                <h3> 1920 </h3>
+                <p>Activities Listed</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="hotel">
+        <h2>Popular Hotels</h2>
+        <hr class="underline">
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <div class="container">
+
+                    <img id="expandedImg" style="width:100%;display: block;"
+                        src="https://lh5.googleusercontent.com/p/AF1QipNfxixPpsvfPMeWJSHCq-EnNMksuABPKtsu-rLJ=w325-h243-k-no">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipOvmX60KbLzV2lVc5XbzA1aYIwjpMM3jRLXP6-9=w325-h216-k-no"
+                            alt="Nature" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://lh3.googleusercontent.com/proxy/g5ier9BRIBmpKYAFrU5LQ-1CyoIgk2m2L_F3fxt92RBbuCJrtz0fpFs-uQvWNHFg1ALnoQd8MSeEgEwsdjT45xVa5p-lFpSfGiTtZbhPJvJbZh-Bwcmx6FCoqXV9YeZ0umWVYb7ZGFPIvkDSDRMxtYR8h9gCOA=w325-h238-k-no"
+                            alt="Snow" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://lh3.googleusercontent.com/proxy/brIHhpyxHQKZS3u_7BG5rWUu3Zfysw7n2wcxl9fofNAmuJeTVld4-q8jhUODNRX4lRdNpaC6brxzw6LjUWkW8SsxQtyVbmvFhN2bzGQ6qR3mt46LtcdfxSVbXZ_4qPYjW2DYu9ybcsnD1n5grf3whG5efTHZHHw=w325-h161-k-no"
+                            alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMmZKAZwzslmNFkSP4KTHwERaY-ummphoZkSyw6=w325-h214-k-no"
+                            alt="Lights" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="hotel-right">
+                <img
+                    src="data:image/png;base64,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">
+                <h2>
+                    The Oberoi Udaivilas, Udaipur
+                </h2>
+                <p>
+
+                    Badi-Gorela-Mulla Talai Rd, Haridas Ji Ki Magri, Pichola, Udaipur, Rajasthan 313001•0294 243 3300
+                </p>
+
+                <div class="stars">
+                    <div style="color: gray;text-align: left;font-size: 16px;"><i class="fas fa-spa"></i> Spa <br> <i
+                            class="fas fa-wifi"></i> Free Wifi</div>
+                    <div>
+                        <p style="font-size: 16px;">5 star</p><br><i class="fas fa-star "></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="hotel-card-content">
+                    <p>3,4,5 or 6 nights from</p>
+                    <h3>$399/room</h3>
+                    <p>Valued upto $3000</p><button>View Details</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <div class="container">
+
+                    <img id="expandedImg1" style="width:100%;display: block;"
+                        src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/9z3l65d9sf191vywssp8.webp">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/avrwsk29ji2g97ufxaj.webp"
+                            alt="Nature" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/s72zg23s9km5dwr6s56o.webp"
+                            alt="Snow" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/zpes5pf8fikaguwofy2p.webp"
+                            alt="Mountains" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/08i3kd631825ja4alq9d.webp"
+                            alt="Lights" style="width:100%" onclick="myFunction1(this);">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="hotel-right">
+                <img
+                    src="https://images.luxuryescapes.com/fl_progressive,q_auto:eco,c_fill,g_auto,ar_3:2/dofmyjy29qww3dwk3zus.webp">
+                <h2>
+                    Saivilas Palace
+                </h2>
+                <p>
+
+                    Old Delhi Heritage Mansion Stay with Room Upgrade, Decadent Dining & One Child Stays Free
+                </p>
+
+                <div class="stars">
+                    <div style="color: gray;text-align: left;font-size: 16px;"><i class="fas fa-spa"></i> Spa <br> <i
+                            class="fas fa-wifi"></i> Free Wifi</div>
+                    <div>
+                        <p style="font-size: 16px;">5 star</p><br><i class="fas fa-star "></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="hotel-card-content">
+                    <p>3,4,5 or 6 nights from</p>
+                    <h3>$499/room</h3>
+                    <p>Valued upto $5000</p><button>View Details</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <div class="hotel-img">
+                <div class="container">
+
+                    <img id="expandedImg2" style="width:100%;display: block;"
+                        src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/mmfm5qfjyyk0qqr87n8.webp">
+                    <div id="imgtext"></div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/7gcf6v7htqltl56g305e.webp"
+                            alt="Nature" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/ecj5kkwkabdbq6lqcfgg.webp"
+                            alt="Snow" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/ygdodnhuofu8y04b5xta.webp"
+                            alt="Mountains" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images.luxuryescapes.com/q_auto:eco,c_fill,g_auto,w_1600,ar_16:9/wgg273gz3lqs8hcazfb.webp"
+                            alt="Lights" style="width:100%" onclick="myFunction2(this);">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="hotel-right">
+                <img
+                    src="https://images.luxuryescapes.com/fl_progressive,q_auto:eco,c_fill,g_auto,ar_3:2/u499xu6e7cq3ygadp9.webp">
+                <h2>
+                    Azaya , Goa India
+                </h2>
+                <p>
+                    Five-Star Goa Beachfront Luxury with Daily Breakfast, Dining Credit & Roundtrip Airport Transfers
+                </p>
+
+                <div class="stars">
+                    <div style="color: gray;text-align: left;font-size: 16px;"><i class="fas fa-spa"></i> Spa <br> <i
+                            class="fas fa-wifi"></i> Free Wifi</div>
+                    <div>
+                        <p style="font-size: 16px;">5 star</p><br><i class="fas fa-star "></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="hotel-card-content">
+                    <p>2,3,4 or 5 nights from</p>
+                    <h3>$299/room</h3>
+                    <p>Valued upto $2500</p><button>View Details</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="hotel">
+        <h2>Special Offers</h2>
+        <hr class="underline">
+
+        <div class="sp">
+            <div class="card">
+
+                <div class="bottom">
+                    <h3 class="name">HoneyMoon Packages</h3>
+                    <div class="profession-wrapper">
+                        <p class="profession">
+                            20% off*
+                        </p>
+
+                        <button class="btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card1">
+
+                <div class="bottom">
+                    <h3 class="name">Winter Packages</h3>
+                    <div class="profession-wrapper">
+                        <p class="profession">
+                            20% off*
+                        </p>
+
+                        <button class="btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card2">
+
+                <div class="bottom">
+                    <h3 class="name">New Year Specials</h3>
+                    <div class="profession-wrapper">
+                        <p class="profession">
+                            20% off*
+                        </p>
+
+                        <button class="btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe</h2>
+        <h2>Get Latest News</h2>
+        <div class="news-signup"><input type="email" placeholder="Enter Your Email  "></div>
+        <button class="search">Submit</button>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-content">
+                <h2>Travel-2</h2>
+                <p>Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts.</p>
+                <div style="display: flex;">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-middle">
+            <div class="footer-content">
+                <ul>
+                    <li>Hotels</li>
+                    <li>Flights</li>
+                    <li>Cabs</li>
+                    <li>Bus</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Enquiry</li>
+
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Refund</li>
+                    <li>Customer Care</li>
+                    <li>Cancel Trip</li>
+                    <li>Ask Agent</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="footer-right">
+            <h2>Subscribe</h2>
+            <h2>Get Latest News</h2>
+            <div class="news-signup-footer"><input type="email" placeholder="Enter Your Email  "></div>
+            <button class="search">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        // hotel
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+        function myFunction1(imgs) {
+            var expandImg = document.getElementById("expandedImg1");
+            var imgText = document.getElementById("imgtext1");
+
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+        function myFunction2(imgs) {
+            var expandImg = document.getElementById("expandedImg2");
+            var imgText = document.getElementById("imgtext2");
+
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+
+
+    </script>
+</body>
+
+</html>
