@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="contact.css">
+
+    <script>
+          function initMap() {
+        var test= {lat: 23.2599, lng: 77.4126};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: test
+        });
+        var marker = new google.maps.Marker({
+          position: test,
+          map: map
+        });
+      }  
+
+      
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    
+    </script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Travel 2</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="hotel.html" class="nav-link">Services</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="color:#F8AA30">Contact</a>
+                </li>
+            </ul>
+
+            <li >
+
+                <div class="modal-container">
+
+                    <input type="checkbox" id="modal-toggle">
+                    <label for="modal-toggle" class="modal-btn label">Sign Up</label>
+    
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-content">
+    
+                        <label for="modal-toggle" class="modal-close">&times;</label>
+                        <div class="container">
+                            <div>
+                                <h2>Sign up</h2>
+                            </div>
+                            <FORM class="form" id="form">
+                                <div class="form-control">
+                                    <label for="">Username</label>
+    
+                                    <input type="text" id="username" placeholder="Enter your fullname" autocomplete="off">
+                                    <i class="fas fa-check-circle "></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Error Msg</small>
+                                </div>
+    
+                                <div class="form-control">
+                                    <label for="">Email</label>
+    
+                                    <input type="email" id="email" placeholder="Enter your Email" autocomplete="off">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Error Msg</small>
+                                </div>
+    
+                                <div class="form-control">
+                                    <label for="">Phone Number</label>
+    
+                                    <input type="number" id="phone" placeholder="Enter your Phone Number"
+                                        autocomplete="off">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Error Msg</small>
+                                </div>
+    
+                                <div class="form-control">
+                                    <label for="">Password</label>
+    
+                                    <input type="password" id="password" placeholder="Enter your Password"
+                                        autocomplete="off">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Error Msg</small>
+                                </div>
+    
+                                <div class="form-control">
+                                    <label for="">ConfirmPassword</label>
+    
+                                    <input type="password" id="cpassword" placeholder="Confirm your Password"
+                                        autocomplete="off">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Error Msg</small>
+                                </div>
+                                <input type="submit" value="submit" class="btn">
+                            </FORM>
+                        </div>
+    
+    
+    
+                        <!-- <label for="modal-toggle" class="modal-content-btn">OK</label> -->
+                    </div>
+                </div>
+            </li>
+        
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="header-text">
+
+
+            <h2 class="line-1 anim-typewriter">Make Your Tour Amazing With Us.</h2>
+            <p> Home > Contact US</p>
+        </div>
+    </div>
+
+    <div class="contact-cards">
+        <div class="card-item">
+            <div class="logo"> <i class="fas fa-paper-plane"></i></div>
+            <h2>Contact</h2>
+            <p>travel-2@gmail.com</p>
+
+        </div>
+        <div class="card-item">
+            <div class="logo"> <i class="fas fa-phone-alt"></i></div>
+            <h2>Number</h2>
+            <p>91+ 9876543210</p>
+
+        </div>
+        <div class="card-item">
+            <div class="logo"><i class="fas fa-map-marker-alt"></i></div>
+            <h2>Address</h2>
+            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+
+        </div>
+        <div class="card-item">
+            <div class="logo"><i class="fas fa-headset"></i></div>
+            <h2>Talk To Our Agent</h2>
+            <p>Available 24/7</p>
+
+        </div>
+    </div>
+
+
+    <main>
+        <div id="map"></div>
+        <div class="form">
+
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="lname">Email</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+              
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </div>
+    </main>
+
+   <section class="faq">
+    <div class="accordion">
+        <div class="accordion-tab">
+            <input type="radio" id="toggle1" class="accordion-toggle" name="toggle">
+            <label for="toggle1">How to Get a Refund</label>
+            <div class="accordion-content">
+               
+                <p> No Comments</p>
+            </div>
+        </div>
+        <div class="accordion-tab">
+            <input type="radio" id="toggle2" class="accordion-toggle" name="toggle">
+            <label for="toggle2">Do pictures Match the real destination</label>
+            <div class="accordion-content">
+               
+                <p>Lol!!! No</p>
+            </div>
+        </div>
+        <div class="accordion-tab">
+            <input type="radio" id="toggle3" class="accordion-toggle" name="toggle">
+            <label for="toggle3">Can we Take shampoo and soap from Hotel rooms</label>
+            <div class="accordion-content">
+               
+                <p>Ofcourse...</p>
+            </div>
+        </div>
+        <div class="accordion-tab">
+            <input type="radio" id="toggle4" class="accordion-toggle" name="toggle">
+            <label for="toggle4">Can't Connect to our Agent</label>
+            <div class="accordion-content">
+               
+                
+                <p>Try Again</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="query">
+        <h2>Make Your Tour Memorable and Safe With Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+            ocean.</p>
+    </div>
+
+
+</section>
+
+    <section class="newsletter">
+        <h2>Subscribe</h2>
+        <h2>Get Latest News</h2>
+        <div class="news-signup"><input type="email" placeholder="Enter Your Email  "></div>
+        <button class="search">Submit</button>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-content">
+                <h2>Travel-2</h2>
+                <p>Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts.</p>
+                <div style="display: flex;">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-middle">
+            <div class="footer-content">
+                <ul>
+                    <li>Hotels</li>
+                    <li>Flights</li>
+                    <li>Cabs</li>
+                    <li>Bus</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Enquiry</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Refund</li>
+                    <li>Customer Care</li>
+                    <li>Cancel Trip</li>
+                    <li>Ask Agent</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="footer-right">
+            <h2>Subscribe</h2>
+            <h2>Get Latest News</h2>
+            <div class="news-signup-footer"><input type="email" placeholder="Enter Your Email  "></div>
+            <button class="search">Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9iMTtuF5Q0Dl2hBTBo5uJj2Z250jU10&callback=initMap&libraries=&v=weekly"
+        async>
+
+
+    
+    
+    </script>
+</body>
+
+</html>

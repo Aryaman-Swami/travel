@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+
+
+    <!-- testimonial -->
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Travel 2</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color:#F8AA30">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotel.html" class="nav-link">Services</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+
+                </ul>
+
+                    <li >
+
+                        <div class="modal-container">
+
+                            <input type="checkbox" id="modal-toggle">
+                            <label for="modal-toggle" class="modal-btn label">Sign Up</label>
+            
+                            <div class="modal-backdrop"></div>
+                            <div class="modal-content">
+            
+                                <label for="modal-toggle" class="modal-close">&times;</label>
+                                <div class="container">
+                                    <div>
+                                        <h2>Sign up</h2>
+                                    </div>
+                                    <FORM class="form" id="form">
+                                        <div class="form-control">
+                                            <label for="">Username</label>
+            
+                                            <input type="text" id="username" placeholder="Enter your fullname" autocomplete="off">
+                                            <i class="fas fa-check-circle "></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error Msg</small>
+                                        </div>
+            
+                                        <div class="form-control">
+                                            <label for="">Email</label>
+            
+                                            <input type="email" id="email" placeholder="Enter your Email" autocomplete="off">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error Msg</small>
+                                        </div>
+            
+                                        <div class="form-control">
+                                            <label for="">Phone Number</label>
+            
+                                            <input type="number" id="phone" placeholder="Enter your Phone Number"
+                                                autocomplete="off">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error Msg</small>
+                                        </div>
+            
+                                        <div class="form-control">
+                                            <label for="">Password</label>
+            
+                                            <input type="password" id="password" placeholder="Enter your Password"
+                                                autocomplete="off">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error Msg</small>
+                                        </div>
+            
+                                        <div class="form-control">
+                                            <label for="">ConfirmPassword</label>
+            
+                                            <input type="password" id="cpassword" placeholder="Confirm your Password"
+                                                autocomplete="off">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error Msg</small>
+                                        </div>
+                                        <input type="submit" value="submit" class="btn">
+                                    </FORM>
+                                </div>
+            
+            
+            
+                                <!-- <label for="modal-toggle" class="modal-content-btn">OK</label> -->
+                            </div>
+                        </div>
+                    </li>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Travel to the any corner of the world, without going around in circles</p>
+                <h2>Make Your Tour Amazing With Us</h2>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-item">
+                    <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> From</h2>
+                    <input list="magicHouses" id="myHouse" name="myHouse" placeholder='New Delhi' />
+                    <datalist id="magicHouses">
+                        <option value="Bangalore ">
+                        <option value="Mumbai">
+                        <option value="Pune">
+                        <option value="Jaipur">
+                        <option value="Coimbatore">
+                        <option value="Gwalior">
+                        <option value="Bhopal">
+
+
+                    </datalist>
+                    </form>
+                </div>
+                <div class="tab-item">
+                    <h2><i class="fas fa-map-marker-alt" style="padding:0 7px;"></i> To</h2>
+                    <input list="magicHouses" id="myHouse" name="myHouse" placeholder="Mumbai" />
+                    <datalist id="magicHouses">
+                        <option value="Bangalore ">
+                        <option value="Delhi">
+                        <option value="Pune">
+                        <option value="Jaipur">
+                        <option value="Coimbatore">
+                        <option value="Gwalior">
+                        <option value="Bhopal">
+
+
+                    </datalist>
+                    </form>
+                </div>
+
+                <div class="tab-item">
+                    <h2>Departure</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                </div>
+                <div class="tab-item">
+                    <h2>Return</h2><input type="date" value="2021-08-01" min="2021-01-01" max="2025-01-01">
+                </div>
+                <div class="tab-item">
+                    <button class="search">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+
+    <div class="about">
+
+        <img src="airplane.png" class="airplane">
+        <div class="left-about">
+            <badge>About Us</badge>
+            <h2>
+                Explore All Corners of The World With Us
+            </h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.
+                <br>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+        <div class="right-about">
+            <div class="about-img1"></div>
+            <div class="about-img2">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header2">
+        <div class="custom-shape-divider-bottom-1635343204">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="box-1">
+            <h2>Making Adventorous Tours, Activities Affordable</h2>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ea ut beatae culpa ex nihil tempore sed
+                illum. Sit, est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error ex
+
+            </p>
+        </div>
+        <div class="box-2">
+
+
+        </div>
+    </div>
+
+    <section class="safe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVfpnKKXgcZ7cG0KTVxE95TQ-Xr2xdrPhwP3BW-EBje6ZZMT1xJvGl4qpJZVOeJTkaOQ&usqp=CAU"
+            class="route">
+        <img src="pngwing.com (2).png" class="compass">
+
+        <div class="card">
+            <div class="left-card">
+                <div class="card-up">
+
+                    <div class="card-content"><i class="fas fa-skiing-nordic"></i>
+                        <h2>Activities</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto.</p>
+                    </div>
+                    <div class="card-content"><i class="fas fa-route"></i>
+                        <h2>Travel</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto.</p>
+                    </div>
+                </div>
+                <div class="card-up">
+
+                    <div class="card-content"><i class="fas fa-user"></i>
+                        <h2>Private Guide</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto.</p>
+                    </div>
+                    <div class="card-content"><i class="fas fa-map-marked-alt"></i>
+                        <h2>Location Manager</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-card">
+                <h2>It's time to start your adventure</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.
+
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean. A small river named Duden flows by their place and supplies it with the necessary
+                    regelialia.</p>
+                <div class="search">Search Destination</div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="owl">
+
+        <h2>Best Place Destinations</h2>
+        <hr class="underline">
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class='demo-container'>
+                    <div class='carouselowl'>
+                        <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1'
+                            name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--forward'
+                                for='carousel-slide-activator-2'>
+                                <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward'
+                                for='carousel-slide-activator-1'>
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                            <label class='carousel__control carousel__control--forward'
+                                for='carousel-slide-activator-3'>
+                                <i class="fas fa-arrow-right"></i>
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward'
+                                for='carousel-slide-activator-2'>
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                        </div>
+                        <div class='carousel__screen'>
+                            <div class='carousel__track'>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/mehrangharh-fort-and-jaswant-thada-mausoleum-in-jodhpur-rajasthan-picture-id805563154?b=1&k=20&m=805563154&s=170667a&w=0&h=o_qAAzJKWXDTzXmpy0hdDIF0pfM2ERsMFu_X_umO4lI="
+                                            alt="">
+                                        <div class="image-text">$324</div>
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-picture-id942152278?b=1&k=20&m=942152278&s=170667a&w=0&h=t1_kH6Ls4XAnAuBoSf0ba_n8WeY2-0rk8G4bg1_-a4Q="
+                                            alt="">
+                                        <div class="image-text">$345</div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/india-gate-picture-id510795912?b=1&k=20&m=510795912&s=170667a&w=0&h=XLp6vDILq-QQ3-q3yh6YrGY-jxvWVfBXvs50izSNMzU="
+                                            alt="">
+                                        <div class="image-text">$345</div>
+                                    </div>
+                                </div>
+
+
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/house-boat-in-backwaters-picture-id177447843?b=1&k=20&m=177447843&s=170667a&w=0&h=eeAMwH9E-7uUS1QhnB4AaVbUuRT5gm7Y-84TFQBe1p0="
+                                            alt="">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/varanasi-at-sunrise-picture-id905049262?b=1&k=20&m=905049262&s=170667a&w=0&h=XEQKKUNrpKAGKv-6wJBAIDq1lO7uFT1N3SsESmw4yYE="
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/camel-safari-ride-caravan-in-hunder-desert-nubra-valley-leh-ladakh-picture-id1061972196?b=1&k=20&m=1061972196&s=170667a&w=0&h=mrQQeAUeQxF778EI1QRPD4dcVY8lZtpu4eIkK01Pcpg="
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/varanasi-at-sunrise-picture-id905049262?b=1&k=20&m=905049262&s=170667a&w=0&h=XEQKKUNrpKAGKv-6wJBAIDq1lO7uFT1N3SsESmw4yYE="
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="https://media.istockphoto.com/photos/varanasi-at-sunrise-picture-id905049262?b=1&k=20&m=905049262&s=170667a&w=0&h=XEQKKUNrpKAGKv-6wJBAIDq1lO7uFT1N3SsESmw4yYE="
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <h2 class="feedback-head">Customer Feedback</h2>
+    <hr class="underline">
+    <div class="testimonials-section">
+
+
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <input type="radio" name="slider" title="slide5" class="slider__nav" />
+        <div class="slider__inner">
+            <div class="slider__contents">
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick and my rep solves
+                    tough problems the right way. We get answers that work.</p>
+                <h2 class="slider__caption">Rhonda | NylonCraft</h2>
+            </div>
+            <div class="slider__contents">
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">You all bend over backwards to get it done. Inside sales and the Account Managers
+                    are great! It's your service...you all know that it's not just about taking orders it's about
+                    service. Why do we choose you guys - your people, your prices, you're quick and you have a ton of
+                    technical knowledge.</p>
+                <h2 class="slider__caption">Jared | Rexam</h2>
+            </div>
+            <div class="slider__contents">
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">It's the long-term relationship we have with Proheat that keeps me calling you
+                    guys. I trust you, you're quick, and everybody I've ever spoken to there are all great people. Our
+                    CEO, Bill, talks about building relationships. That's exactly what Proheat does, and I couldn't be
+                    happier.</p>
+                <h2 class="slider__caption">Chris | C&M Fine Pack</h2>
+            </div>
+            <div class="slider__contents">
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">You answer my questions, always takes care of problems, and I never have a
+                    hassle.</p>
+                <h2 class="slider__caption">Rex | LNP Engineering Plastics</h2>
+            </div>
+            <div class="slider__contents">
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">Proheat's staff are all so friendly and everybody goes above and beyond. Everyone
+                    is courteous, everything is quick and you get us what we need. I have to shop around for everything
+                    and we ALWAYS come back to Proheat.</p>
+                <h2 class="slider__caption">Darlene | Russel Stover</h2>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <h2 class="feedback-head">Gallery</h2>
+        <hr class="underline">
+
+        <div class="wrapper">
+            <img src="https://images.unsplash.com/photo-1598190896090-9dc5c70361d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWElMjB0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1542347167-04f9e749cdcf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWElMjB0cmF2ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fGluZGlhJTIwdHJhdmVsJTIwcGljdHVyZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1478860002487-680cc42afbeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHJhdmVsJTIwcGljdHVyZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1536289444758-1a89cd14499e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGluZGlhJTIwdHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1620720970374-5b7e67e1e610?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZGlhJTIwdHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1530345586132-0fbc15e9ae5b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHRyYXZlbCUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbCUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHRyYXZlbCUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1529876754933-9ec125d43742?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbCUyMHBpY3R1cmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+
+
+        <img src="birds.png" class="birds">
+
+    </section>
+
+    <div class="partner-top">
+
+
+        <h2 class="feedback-head">Partners</h2>
+        <hr class="underline">
+        <section class="partners">
+
+            <img src="http://www.pngimagesfree.com/LOGO/M/Makemytrip/Make-My-Trip-Logo-PNG.png" alt="">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2018/03/etihad-airways-logo-500x301.png"
+                alt="">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/oyo-logo-freelogovectors.net_-400x158.png"
+                alt="">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2018/07/trivago-logo.png" alt="">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/visa-logo-500x161.png" alt="">
+
+        </section>
+    </div>
+
+
+    <section class="newsletter">
+        <h2>Subscribe</h2>
+        <h2>Get Latest News</h2>
+        <div class="news-signup"><input type="email" placeholder="Enter Your Email  "></div>
+        <button class="search">Submit</button>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="footer-content">
+                <h2>Travel-2</h2>
+                <p>Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts.</p>
+                <div style="display: flex;">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-middle">
+            <div class="footer-content">
+                <ul>
+                    <li>Hotels</li>
+                    <li>Flights</li>
+                    <li>Cabs</li>
+                    <li>Bus</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Enquiry</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Refund</li>
+                    <li>Customer Care</li>
+                    <li>Cancel Trip</li>
+                    <li>Ask Agent</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-right">
+            <h2>Subscribe</h2>
+            <h2>Get Latest News</h2>
+            <div class="news-signup-footer"><input type="email" placeholder="Enter Your Email  "> <i
+                    class="fas fa-paper-plane"></i></div>
+            <button class="search">Submit</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
